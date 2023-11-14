@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+@import 'mixins';
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  @include displayFlex(row);
+  justify-content: center;
+  align-items: center;
+  background-color: $off-white;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  border-bottom-right-radius: 30%;
+}
+
+.birthday-inputs-container {
+  @include displayFlex(row);
+  width: 80%;
+  color: $smokey-grey-color;
+
+  .input {
+    @include displayFlex(column);
+    gap: 6px;
+
+    label {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    input {
+      width: 60%;
+      font-size: 1.6rem;
+      padding: 0.6rem;
+      border: 1px solid $off-white;
+      border-radius: 8px;
+      outline: transparent;
+    }
+    input::placeholder{
+      font-weight: 700;
+    }
+  } 
+}
+
+.submit-container {
+  position: relative;
+
+  hr {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 1;
+  }
+
+  div {
+    position: relative;
+    @include displayFlex(row);
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 1rem;
+    background-color: $purple-color;
+    border-radius: 50%;
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 2;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.age-display {
+  font-size: 5rem;
+  font-weight: 700;
+  color: $off-black;
+
+  span {
+    color: $purple-color;
+  }
+}

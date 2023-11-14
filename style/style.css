@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  border-bottom-right-radius: 30%;
+}
+
+.birthday-inputs-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  color: hsl(0, 1%, 44%);
+}
+.birthday-inputs-container .input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.birthday-inputs-container .input label {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.birthday-inputs-container .input input {
+  width: 60%;
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  border: 1px solid hsl(0, 0%, 94%);
+  border-radius: 8px;
+  outline: transparent;
+}
+.birthday-inputs-container .input input::placeholder {
+  font-weight: 700;
+}
+
+.submit-container {
+  position: relative;
+}
+.submit-container hr {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  z-index: 1;
+}
+.submit-container div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 1rem;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+.submit-container div img {
+  width: 100%;
+}
+
+.age-display {
+  font-size: 5rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+}
+.age-display span {
+  color: hsl(259, 100%, 65%);
+}

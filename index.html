@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="style/style.css">
 
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -15,20 +15,35 @@
 
 <body>
 
+  <div class="container">
+    <section class="birthday-inputs-container">
+      <div class="day input">
+        <label for="day-input">DAY</label>
+        <input type="number" id="day-input" name="day-input" placeholder="DD">
+      </div>
+      <div class="month input">
+        <label for="month-input">MONTH</label>
+        <input type="number" id="month-input" name="month-input" placeholder="MM">
+      </div>
+      <div class="year input">
+        <label for="year-input">YEAR</label>
+        <input type="number" id="year-input" name="year-input" placeholder="YYYY">
+      </div>
+    </section>
 
+    <section class="submit-container">
+      <hr>
+      <div>
+        <img src="assets/images/icon-arrow.svg" alt="">
+      </div>
+    </section>
 
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+    <section class="age-display">
+      <div class="years-display display"><span id="years">--</span> years</div>
+      <div class="months-display display"><span id="months">--</span> months</div>
+      <div class="days-display display"><span id="days">--</span> days</div>
+    </section>
+  </div>
 </body>
 
 </html>
